@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Counter!!!</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button name="button" id="clicker" data-count='0'>Click Me</button>
+    <p id="clickedNum"></p>
+    <script>
+        $(document).ready(function(){
+            $('#clicker').click(function(){
+                var count = parseInt($(this).attr('data-count')) + 1;
+                $('#clickedNum').text('The button got clicked ' + count + ' times');
+                $('#clicker').attr('data-count', count);
+            });
+     })
+    </script>
+</body>
+</html>

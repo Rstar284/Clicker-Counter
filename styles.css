@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+* {
+    background-image: url(./pattern.png);
+}
+
+body {
+    text-align: center;
+    display: grid;
+}
+
+#clickedNum {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 2rem;
+    animation: ease-in;
+    background-color: transparent;
+}
+
+#clicker {
+    font-family: 'Play', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    border: 10px;
+    color: red;
+}
